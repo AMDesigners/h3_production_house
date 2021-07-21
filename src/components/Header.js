@@ -43,8 +43,8 @@ function Header() {
           </IconButton>
         ):null}
         <Fade top>
-          <Link to="/" className="header_link">
-            <img src={process.env.PUBLIC_URL + "img/logo.png"} className="header_logo" alt="Logo" />
+          <Link to={process.env.PUBLIC_URL + "/"} className="header_link">
+            <img src={process.env.PUBLIC_URL + "/img/logo.png"} className="header_logo" alt="Logo" />
             <h3 className="header_title">H3 Production House</h3>
           </Link>
         </Fade>
@@ -53,7 +53,7 @@ function Header() {
             className="header_navlink"
             activeClassName="activate"
             exact
-            to="/"
+            to={process.env.PUBLIC_URL + "/"}
           >
             <div className="header_navlink_div">Home</div>
           </NavLink>
@@ -63,7 +63,7 @@ function Header() {
             className="header_navlink"
             activeClassName="activate"
             exact
-            to="/about"
+            to={process.env.PUBLIC_URL + "/about"}
           >
             <div className="header_navlink_div">About</div>
           </NavLink>
@@ -73,7 +73,7 @@ function Header() {
             className="header_navlink"
             activeClassName="activate"
             exact
-            to="/services"
+            to={process.env.PUBLIC_URL + "/services"}
           >
             <div className="header_navlink_div">Services</div>
           </NavLink>
@@ -83,7 +83,7 @@ function Header() {
             className="header_navlink"
             activeClassName="activate"
             exact
-            to="/gallery"
+            to={process.env.PUBLIC_URL + "/gallery"}
           >
             <div className="header_navlink_div">Gallery</div>
           </NavLink>
@@ -93,7 +93,7 @@ function Header() {
             className="header_navlink"
             activeClassName="activate"
             exact
-            to="/feedback"
+            to={process.env.PUBLIC_URL + "/feedback"}
           >
             <div className="header_navlink_div">Feedback</div>
           </NavLink>
@@ -103,7 +103,7 @@ function Header() {
             className="header_navlink"
             activeClassName="activate"
             exact
-            to="/contact"
+            to={process.env.PUBLIC_URL + "/contact"}
           >
             <div className="header_navlink_div">Contact</div>
           </NavLink>
@@ -122,7 +122,7 @@ function Header() {
             </a>
           </div>
           <p className="header_p">
-            <CopyrightIcon className="copy" /> {year} H3 Production House <br />{" "}
+            <CopyrightIcon className="copy" /> {year} H3 Production House <br />
             Design by: A.M.Designers
           </p>
         </Fade>

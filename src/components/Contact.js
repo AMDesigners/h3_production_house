@@ -54,7 +54,7 @@ function Contact() {
                   />
                   <input
                     type="email"
-                    name="emial"
+                    name="email"
                     className="feedback_field contact_field"
                     required
                     placeholder="Email"

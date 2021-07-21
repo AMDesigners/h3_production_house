@@ -32,7 +32,7 @@ function Home() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={process.env.PUBLIC_URL + "img/homeimg1.jpg"}
+            src={process.env.PUBLIC_URL + "/img/homeimg1.jpg"}
             alt="First slide"
           />
           <Carousel.Caption className="hometag_parent">
@@ -48,7 +48,7 @@ function Home() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={process.env.PUBLIC_URL + "img/homeimg2.jpg"}
+            src={process.env.PUBLIC_URL + "/img/homeimg2.jpg"}
             alt="Second slide"
           />
 
@@ -65,7 +65,7 @@ function Home() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={process.env.PUBLIC_URL + "img/homeimg3.jpg"}
+            src={process.env.PUBLIC_URL + "/img/homeimg3.jpg"}
             alt="Third slide"
           />
 

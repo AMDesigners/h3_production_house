@@ -69,12 +69,12 @@ function App() {
             </div>
             <div className="col-md-9 col-12 right offset-md-3">
               <Switch>
-                <Route exact path="/">
+                <Route exact path={process.env.PUBLIC_URL + "/"}>
                   <SimpleReactLightbox>
                     <Home />
                   </SimpleReactLightbox>
                 </Route>
-                <Route exact path="/wedding">
+                <Route exact path={process.env.PUBLIC_URL + "/wedding"}>
                   <SimpleReactLightbox>
                     <WeddingGallery
                       urls={WeddingGalleryImageurls}
@@ -85,7 +85,7 @@ function App() {
                     />
                   </SimpleReactLightbox>
                 </Route>
-                <Route exact path="/prewedding">
+                <Route exact path={process.env.PUBLIC_URL + "/prewedding"}>
                   <SimpleReactLightbox>
                     <WeddingGallery
                       urls={PreWeddingGalleryImageurls}
@@ -96,7 +96,7 @@ function App() {
                     />
                   </SimpleReactLightbox>
                 </Route>
-                <Route exact path="/birthdayparty">
+                <Route exact path={process.env.PUBLIC_URL + "/birthdayparty"}>
                   <SimpleReactLightbox>
                     <WeddingGallery
                       urls={wgbp}
@@ -107,7 +107,7 @@ function App() {
                     />
                   </SimpleReactLightbox>
                 </Route>
-                <Route exact path="/maternity">
+                <Route exact path={process.env.PUBLIC_URL + "/maternity"}>
                   <SimpleReactLightbox>
                     <WeddingGallery
                       urls={ms}
@@ -118,24 +118,24 @@ function App() {
                     />
                   </SimpleReactLightbox>
                 </Route>
-                <Route exact path="/about">
+                <Route exact path={process.env.PUBLIC_URL + "/about"}>
                   <About />
                 </Route>
-                <Route exact path="/services">
+                <Route exact path={process.env.PUBLIC_URL + "/services"}>
                   <Services />
                 </Route>
-                <Route exact path="/gallery">
+                <Route exact path={process.env.PUBLIC_URL + "/gallery"}>
                   <SimpleReactLightbox>
                     <Gallery />
                   </SimpleReactLightbox>
                 </Route>
-                <Route exact path="/feedback">
+                <Route exact path={process.env.PUBLIC_URL + "/feedback"}>
                   <Feedback />
                 </Route>
-                <Route exact path="/contact">
+                <Route exact path={process.env.PUBLIC_URL + "/contact"}>
                   <Contact />
                 </Route>
-                <Redirect to="/" />
+                <Redirect to={process.env.PUBLIC_URL + "/"} />
               </Switch>
             </div>
           </div>

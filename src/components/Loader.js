@@ -5,7 +5,7 @@ function Loader() {
   return (
     <section>
       <div className="loader">
-        <img src={process.env.PUBLIC_URL + "img/logo.png"} alt="logo" />
+        <img src={process.env.PUBLIC_URL + "/img/logo.png"} alt="logo" />
         <span style={{ "--i": 20 }}></span>
         <span style={{ "--i": 19 }}></span>
         <span style={{ "--i": 18 }}></span>

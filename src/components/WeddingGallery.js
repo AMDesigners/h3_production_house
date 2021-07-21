@@ -22,7 +22,7 @@ function WeddingGallery({ urls, heading, imgSrc, p1, p2 }) {
       <Fade bottom>
         <h1 className="service_heading">{heading}</h1>
         <div className="wg_img_div">
-          <img className="wg_img" src={process.env.PUBLIC_URL + imgSrc} />
+          <img className="wg_img" src={process.env.PUBLIC_URL+ "/" + imgSrc} />
         </div>
       </Fade>
       <Fade bottom>

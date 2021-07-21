@@ -27,7 +27,7 @@ function Service() {
         <div className="text-center">
           <Button
             variant="contained"
-            href="/contact"
+            href={process.env.PUBLIC_URL + "/contact"}
             className="service_button"
           >
             contact with us
