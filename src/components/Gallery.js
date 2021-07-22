@@ -13,8 +13,8 @@ function Gallery() {
       showDownloadButton: false,
     },
     caption: {
-      showCaption: false
-    }
+      showCaption: false,
+    },
   };
 
   return (
@@ -27,7 +27,11 @@ function Gallery() {
         <div className="gallery_gallery">
           {Galleryurls.map((val, index) => {
             return (
-              <GalleryImages key={index} del={index * 100} url={val.url} />
+              <GalleryImages
+                key={index}
+                del={(index % 3) * 200}
+                url={val.url}
+              />
             );
           })}
         </div>

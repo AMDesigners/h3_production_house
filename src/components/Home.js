@@ -12,6 +12,7 @@ import Fade from "react-reveal/Fade";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
 
+
 function Home() {
   const [hide, setHide] = useState(false);
 
@@ -25,8 +26,8 @@ function Home() {
       showDownloadButton: false,
     },
     caption: {
-      showCaption: false
-    }
+      showCaption: false,
+    },
   };
 
   return (
@@ -35,51 +36,57 @@ function Home() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={process.env.PUBLIC_URL + "/img/homeimg1.jpg"}
+            src={process.env.PUBLIC_URL + "/img/homeimg1.jpeg"}
             alt="First slide"
           />
           <Carousel.Caption className="hometag_parent">
-            <h3 className="hometag">
-              <ChevronRightIcon className="hometag_icon" />
-              <ChevronRightIcon className="hometag_icon" />
-              <ChevronRightIcon className="hometag_icon" />
-              <ChevronRightIcon className="hometag_icon" /> Make Your Wedding A
-              Wonderful Story
-            </h3>
+            <Fade top delay={500}>
+              <h3 className="hometag">
+                <ChevronRightIcon className="hometag_icon" />
+                <ChevronRightIcon className="hometag_icon" />
+                <ChevronRightIcon className="hometag_icon" />
+                <ChevronRightIcon className="hometag_icon" /> Make Your Wedding
+                A Wonderful Story
+              </h3>
+            </Fade>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={process.env.PUBLIC_URL + "/img/homeimg2.jpg"}
+            src={process.env.PUBLIC_URL + "/img/homeimg2.jpeg"}
             alt="Second slide"
           />
 
           <Carousel.Caption className="hometag_parent">
-            <h3 className="hometag">
-              <ChevronRightIcon className="hometag_icon" />
-              <ChevronRightIcon className="hometag_icon" />
-              <ChevronRightIcon className="hometag_icon" />
-              <ChevronRightIcon className="hometag_icon" /> Make Your Wedding A
-              Wonderful Story
-            </h3>
+            <Fade top delay={500}>
+              <h3 className="hometag">
+                <ChevronRightIcon className="hometag_icon" />
+                <ChevronRightIcon className="hometag_icon" />
+                <ChevronRightIcon className="hometag_icon" />
+                <ChevronRightIcon className="hometag_icon" /> Make Your Wedding
+                A Wonderful Story
+              </h3>
+            </Fade>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={process.env.PUBLIC_URL + "/img/homeimg3.jpg"}
+            src={process.env.PUBLIC_URL + "/img/homeimg3.jpeg"}
             alt="Third slide"
           />
 
           <Carousel.Caption className="hometag_parent">
-            <h3 className="hometag">
-              <ChevronRightIcon className="hometag_icon" />
-              <ChevronRightIcon className="hometag_icon" />
-              <ChevronRightIcon className="hometag_icon" />
-              <ChevronRightIcon className="hometag_icon" /> Make Your Wedding A
-              Wonderful Story
-            </h3>
+            <Fade top delay={500}>
+              <h3 className="hometag">
+                <ChevronRightIcon className="hometag_icon" />
+                <ChevronRightIcon className="hometag_icon" />
+                <ChevronRightIcon className="hometag_icon" />
+                <ChevronRightIcon className="hometag_icon" /> Make Your Wedding
+                A Wonderful Story
+              </h3>
+            </Fade>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
@@ -99,7 +106,7 @@ function Home() {
               return (
                 <HomeGalleryImages
                   key={index}
-                  del={index * 200}
+                  del={(index % 3) * 200}
                   url={elem.url}
                 />
               );

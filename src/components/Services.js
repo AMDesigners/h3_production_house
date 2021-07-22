@@ -15,8 +15,15 @@ function Service() {
       </Fade>
       <div className="container-fluid">
         <div className="row g-4 pt-4">
-          {ServiceImageurls.map((val, ind) => {
-            return <ServiceImages key={ind} del={ind*200} src={val.url} head={val.head} />;
+          {ServiceImageurls.map((val, index) => {
+            return (
+              <ServiceImages
+                key={index}
+                del={(index % 3) * 200}
+                src={val.url}
+                head={val.head}
+              />
+            );
           })}
         </div>
       </div>

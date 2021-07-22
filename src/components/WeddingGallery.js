@@ -14,10 +14,9 @@ function WeddingGallery({ urls, heading, imgSrc, p1, p2 }) {
       showDownloadButton: false,
     },
     caption: {
-      showCaption: false
-    }
+      showCaption: false,
+    },
   };
-
 
   return (
     <div className="wgallery px-4">
@@ -25,7 +24,7 @@ function WeddingGallery({ urls, heading, imgSrc, p1, p2 }) {
       <Fade bottom>
         <h1 className="service_heading">{heading}</h1>
         <div className="wg_img_div">
-          <img className="wg_img" src={process.env.PUBLIC_URL+ "/" + imgSrc} />
+          <img className="wg_img" src={process.env.PUBLIC_URL + "/" + imgSrc} />
         </div>
       </Fade>
       <Fade bottom>
@@ -37,9 +36,13 @@ function WeddingGallery({ urls, heading, imgSrc, p1, p2 }) {
       <SRLWrapper options={options}>
         <div className="container-fluid">
           <div className="row g-4">
-            {urls.map((val, ind) => {
+            {urls.map((val, index) => {
               return (
-                <HomeGalleryImages key={ind} del={ind * 200} url={val.url} />
+                <HomeGalleryImages
+                  key={index}
+                  del={(index % 3) * 200}
+                  url={val.url}
+                />
               );
             })}
           </div>
