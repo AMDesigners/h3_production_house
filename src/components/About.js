@@ -12,7 +12,7 @@ function About() {
       </Fade>
       <Fade bottom>
         <p className="ap">founder</p>
-        <img src={process.env.PUBLIC_URL + "img/2.jpg"} alt="my-pic" className="about_img" />
+        <img src={process.env.PUBLIC_URL + "/img/2.jpg"} alt="my-pic" className="about_img" />
       </Fade>
       <Fade bottom>
         <p className="about_p text-uppercase">photographer</p>

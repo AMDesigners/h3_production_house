@@ -21,7 +21,7 @@ import {
 } from "./components/HomeGalleryUrls";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = (e) => {
@@ -44,10 +44,7 @@ function App() {
   window.addEventListener("scroll", toggleVisible);
 
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
+    setLoading(false);
   }, []);
 
   return (

@@ -24,6 +24,9 @@ function Home() {
       backgroundColor: "transparent",
       showDownloadButton: false,
     },
+    caption: {
+      showCaption: false
+    }
   };
 
   return (

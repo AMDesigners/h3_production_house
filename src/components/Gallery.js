@@ -12,6 +12,9 @@ function Gallery() {
       backgroundColor: "transparent",
       showDownloadButton: false,
     },
+    caption: {
+      showCaption: false
+    }
   };
 
   return (

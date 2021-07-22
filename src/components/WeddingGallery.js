@@ -13,6 +13,9 @@ function WeddingGallery({ urls, heading, imgSrc, p1, p2 }) {
       backgroundColor: "transparent",
       showDownloadButton: false,
     },
+    caption: {
+      showCaption: false
+    }
   };
 
 

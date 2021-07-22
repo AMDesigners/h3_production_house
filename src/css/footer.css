@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond&family=Roboto:wght@300&display=swap&display=swap");
-
 .footer_title {
   color: aliceblue;
   font-family: "Abril Fatface", cursive;
@@ -12,7 +10,6 @@
 .footer p {
   font-size: 0.8rem;
   color: aliceblue;
-  font-family: "Roboto", sans-serif;
   margin-top: 1rem;
   font-weight: 700;
   text-align: center;

@@ -27,29 +27,31 @@ function Header() {
 
   return (
     <>
-    {!clicked? 
-     <IconButton onClick={Show} className="bicon menuicon" color="light">
-     <MenuIcon />
-   </IconButton>:null}
-    
+      {!clicked ? (
+        <IconButton onClick={Show} className="bicon menuicon">
+          <MenuIcon />
+        </IconButton>
+      ) : null}
+
       <div className="header" style={{ "--trans": show }}>
         {clicked ? (
-          <IconButton
-            className="bicon closeicon"
-            onClick={hide}
-            color="light"
-          >
+          <IconButton className="bicon closeicon" onClick={hide}>
             <CloseIcon />
           </IconButton>
-        ):null}
+        ) : null}
         <Fade top>
           <Link to={process.env.PUBLIC_URL + "/"} className="header_link">
-            <img src={process.env.PUBLIC_URL + "/img/logo.png"} className="header_logo" alt="Logo" />
+            <img
+              src={process.env.PUBLIC_URL + "/img/logo.png"}
+              className="header_logo"
+              alt="Logo"
+            />
             <h3 className="header_title">H3 Production House</h3>
           </Link>
         </Fade>
         <Fade left>
           <NavLink
+            onClick={hide}
             className="header_navlink"
             activeClassName="activate"
             exact
@@ -58,8 +60,9 @@ function Header() {
             <div className="header_navlink_div">Home</div>
           </NavLink>
         </Fade>
-        <Fade left delay="200">
+        <Fade left delay={200}>
           <NavLink
+            onClick={hide}
             className="header_navlink"
             activeClassName="activate"
             exact
@@ -68,8 +71,9 @@ function Header() {
             <div className="header_navlink_div">About</div>
           </NavLink>
         </Fade>
-        <Fade left delay="400">
+        <Fade left delay={400}>
           <NavLink
+            onClick={hide}
             className="header_navlink"
             activeClassName="activate"
             exact
@@ -78,8 +82,9 @@ function Header() {
             <div className="header_navlink_div">Services</div>
           </NavLink>
         </Fade>
-        <Fade left delay="600">
+        <Fade left delay={600}>
           <NavLink
+            onClick={hide}
             className="header_navlink"
             activeClassName="activate"
             exact
@@ -88,8 +93,9 @@ function Header() {
             <div className="header_navlink_div">Gallery</div>
           </NavLink>
         </Fade>
-        <Fade left delay="800">
+        <Fade left delay={800}>
           <NavLink
+            onClick={hide}
             className="header_navlink"
             activeClassName="activate"
             exact
@@ -98,8 +104,9 @@ function Header() {
             <div className="header_navlink_div">Feedback</div>
           </NavLink>
         </Fade>
-        <Fade left delay="1000">
+        <Fade left delay={1000}>
           <NavLink
+            onClick={hide}
             className="header_navlink"
             activeClassName="activate"
             exact
